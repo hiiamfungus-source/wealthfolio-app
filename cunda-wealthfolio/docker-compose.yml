@@ -1,5 +1,13 @@
+version: "3.7"
+
 services:
-  app:
+  app_proxy:
+    image: getumbrel/app-proxy:v1.2.3@sha256:6901867ae6151f1580980fa2a9f457ff0e819b59620573e04ca9f4082cbde2b2
+    environment:
+      APP_HOST: cunda-wealthfolio_server_1
+      APP_PORT: 8088
+
+  server:
     image: wealthfolio/wealthfolio:latest
     restart: on-failure
     environment:
