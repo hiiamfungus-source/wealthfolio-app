@@ -1,3 +1,5 @@
+version: "3.7"
+
 services:
   app:
     image: wealthfolio/wealthfolio:latest
@@ -5,16 +7,6 @@ services:
     environment:
       - WF_SECRET_KEY=$$APP_WEALTHFOLIO_SECRET
       - WF_AUTH_PASSWORD_HASH=$$APP_WEALTHFOLIO_PASSWORD
-      - WF_CORS_ALLOW_ORIGINS=http://umbrel.local:2150
-    ports:
-      - "8088:8088"
+      - WF_CORS_ALLOW_ORIGINS=http://umbrel.local:8088
     volumes:
       - ${APP_DATA_DIR}/data:/app/data
-    networks:
-      default:
-        ipv4_address: $APP_APP_IP
-
-networks:
-  default:
-    external: true
-    name: cunda_network
