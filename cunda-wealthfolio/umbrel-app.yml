@@ -15,6 +15,7 @@ repo: https://github.com/wealthfolio/wealthfolio
 support: https://github.com/wealthfolio/wealthfolio/issues
 port: 8088
 gallery: []
+iconUri: "https://raw.githubusercontent.com/hiiamfungus-source/wealthfolio-app/master/cunda-wealthfolio/app-icon.png"
 path: ""
 deterministicPassword: false
 torOnly: false
