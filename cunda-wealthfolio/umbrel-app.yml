@@ -1,28 +1,26 @@
 manifestVersion: 1
-id: cunda-wealthfolio
-name: Wealthfolio
+id: "cunda-wealthfolio"
+name: "Wealthfolio"
 version: "1.0.0"
-tagline: Open-source and private investment tracker.
-description: >
-  Wealthfolio is a self-hosted investment tracker designed to keep your financial data private. 
-  It allows you to track assets, ETFs, and crypto in a clean, unified interface.
-developer: Wealthfolio
-website: https://wealthfolio.app
-submitter: Fungus
-submissionDate: 2026-05-13
+tagline: "Open-source and private investment tracker"
+description: "Wealthfolio is a self-hosted investment tracker designed to keep your financial data private. It allows you to track assets, ETFs, and crypto in a clean, unified interface."
+developer: "Wealthfolio"
+website: "https://wealthfolio.app"
+submitter: "Fungus"
+submissionDate: "2026-05-13"
 categories:
-  - finance
+  - "finance"
 port: 8088
-iconUri: https://wealthfolio.app/logo.png
+iconUri: "https://wealthfolio.app/logo.png"
 
 formFields:
-  - id: APP_WEALTHFOLIO_SECRET
-    name: JWT Secret Key
-    type: text
-    description: "Enter your 32-byte base64 secret key (the one generated with openssl)"
+  - id: "APP_WEALTHFOLIO_SECRET"
+    name: "JWT Secret Key"
+    type: "text"
+    description: "Enter your 32-byte base64 secret key"
     required: true
-  - id: APP_WEALTHFOLIO_PASSWORD
-    name: Argon2id Password Hash
-    type: text
-    description: "Enter the Argon2id hash of your password (use single dollars, e.g., $argon2id$...)"
+  - id: "APP_WEALTHFOLIO_PASSWORD"
+    name: "Argon2id Password Hash"
+    type: "text"
+    description: "Enter the Argon2id hash of your password (use single dollars)"
     required: true
