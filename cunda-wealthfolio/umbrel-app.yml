@@ -14,19 +14,21 @@ dependencies: []
 repo: https://github.com/wealthfolio/wealthfolio
 support: https://github.com/wealthfolio/wealthfolio/issues
 port: 8088
+gallery: []
 path: ""
 deterministicPassword: false
 torOnly: false
 submitter: Fungus
 submission: https://github.com/getumbrel/umbrel-apps
+iconUri: https://raw.githubusercontent.com/wealthfolio/wealthfolio/main/assets/icon.png
 formFields:
   - id: APP_WEALTHFOLIO_SECRET
-    name: JWT Secret Key
+    name: "JWT Secret Key"
     type: text
     description: "Enter your 32-byte base64 secret key"
     required: true
   - id: APP_WEALTHFOLIO_PASSWORD
-    name: Argon2id Password Hash
+    name: "Argon2id Password Hash"
     type: text
     description: "Enter the Argon2id hash of your password (use single dollars)"
     required: true
