@@ -1,1 +1,20 @@
+services:
+  app:
+    image: wealthfolio/wealthfolio:latest
+    restart: on-failure
+    environment:
+      - WF_SECRET_KEY=$$APP_WEALTHFOLIO_SECRET
+      - WF_AUTH_PASSWORD_HASH=$$APP_WEALTHFOLIO_PASSWORD
+      - WF_CORS_ALLOW_ORIGINS=http://umbrel.local:8088
+    ports:
+      - "2150:8088"
+    volumes:
+      - ${APP_DATA_DIR}/data:/app/data
+    networks:
+      default:
+        ipv4_address: $APP_APP_IP
 
+networks:
+  default:
+    external: true
+    name: customstore_network
