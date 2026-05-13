@@ -20,7 +20,6 @@ deterministicPassword: false
 torOnly: false
 submitter: Fungus
 submission: https://github.com/getumbrel/umbrel-apps
-iconUri: https://raw.githubusercontent.com/wealthfolio/wealthfolio/main/assets/icon.png
 formFields:
   - id: APP_WEALTHFOLIO_SECRET
     name: "JWT Secret Key"
